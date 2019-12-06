@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class HealthUpdate : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class HealthUpdate : MonoBehaviour
     void Start()
     {
         healthText.text = "Health: " + health.ToString();
+        //health = int.Parse(healthText.text);
     }
 
     // Update is called once per frame
@@ -22,6 +25,16 @@ public class HealthUpdate : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        string[] healthValue = healthText.text.Split(' ');
+        health = int.Parse(healthValue[1]);
+
+        //enemy
+        if (other.gameObject.CompareTag("enemy"))
+        {
+            health -= 20;
+            healthText.text = "Health: " + health.ToString();
+        }
+
         //good food
         if (other.gameObject.CompareTag("pear"))
         {

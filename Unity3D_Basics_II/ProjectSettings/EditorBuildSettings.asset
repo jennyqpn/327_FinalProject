@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/GameEndScene.unity
     guid: e6b865fdf7488a24bbc170022db2ba00
   - enabled: 1
-    path: Assets/Scenes/FoodCollector.unity
+    path: Assets/Scenes/FoodCollector First.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 3745e59beffbbf24caf1bdc78dbef7f5
+  - enabled: 0
+    path: Assets/Scenes/FoodCollector Third1.unity
+    guid: f3d40535d07373a42bea54250d66d74a
+  - enabled: 1
+    path: Assets/Scenes/FoodCollector Third.unity
+    guid: 44ee813a02b8f2b4c817af398a6e4300
   m_configObjects: {}

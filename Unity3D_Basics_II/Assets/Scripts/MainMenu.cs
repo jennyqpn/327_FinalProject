@@ -28,13 +28,18 @@ public class MainMenu : MonoBehaviour
 #endif
     }
 
-    public void StartGameButton()
+    public void StartFirstButton()
     {
-        SceneManager.LoadScene("FoodCollector");
+        SceneManager.LoadScene("FoodCollector First");
+    }
+
+    public void StartThirdButton()
+    {
+        SceneManager.LoadScene("FoodCollector Third");
     }
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("FoodCollector");
+        SceneManager.LoadScene("StartScene");
     }
 }
